@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign-up></title>
+  <!-- css link -->
+  <link rel="stylesheet" href="./signup.css">
+ <link rel="stylesheet" href="./style.css"> 
+
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- javascript link -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <!-- form strat -->
+
+  <div class="container">
+    <h1>Signup your self </h1>
+    <form action="./index.php" name="registration" class="registartion-form" onsubmit="return formValidation()" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="your name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="text" name="email" id="email" placeholder="your email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Confirm Password:</label></td>
+          <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+          <td><label for="gender" >Gender:</label></td>
+          <td>Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            Other: <input type="radio" name="gender" value="other"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" class="submit" value="sign-up" /></td> 
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <!-- //footer -->
+  <div class="row justify-content-center  text-white col-md-12" id="footer">
+    <div class="col-md-3 col-12">
+      <h4>About</h4>
+      <a href="" alt="">History</a></br>
+      <a href="" alt="">Our team</a></br>
+      <a href="" alt="">Brand guidlines</a></br>
+      <a href="" alt="">terms and condition</a></br>
+      <a href="" alt="">terms/privacy</a></br>
+    </div>
+    <div class="col-md-2 col-11">
+      <h4>Services</h4>
+      <a href="" alt="">how to order</a></br>
+      <a href="" alt="">our product</a></br>
+      <a href="" alt="">order status</a></br>
+      <a href="" alt="">promo code</a></br>
+      <a href="payment.html" alt="">payment method</a></br>
+    </div>
+    <div class="col-md-4 col-11 text-end">
+      <h4>title here</h4>
+      <p>Search here puppy</p>
+      <form id="footer-form">
+        <input type="text" id="footer-searchbox">
+        <button type="submit" id="footer-submit">
+          Signup<i class="bi bi-cursor-fill"></i></button>
+
+      </form>
+      <i class="bi bi-instagram social-icon"></i>
+      <i class="bi bi-twitter social-icon"></i>
+      <i class="bi bi-google social-icon"></i>
+    </div>
+  </div>
+  </body>
+</html>
+   
